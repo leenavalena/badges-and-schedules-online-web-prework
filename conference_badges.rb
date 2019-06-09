@@ -23,15 +23,6 @@ def conference_badges
                               "Hello, Matz! You'll be assigned to room 7!"
                            ]}
 
-  # This funny looking <<-TEXT thing is called heredoc. It's a multi-line string
-  # delimiter that makes it really easy for us to write multi-line strings in the
-  # middle of code. The TEXT part is arbitrary too.
-  # It could easily have been <<-BLAHBLAH. The only requirement is that you use
-  # the same word to end the multi-line string.
-
-  # For more info about heredocs, see this link:
-  # http://en.wikibooks.org/wiki/Ruby_Programming/Here_documents
-
     let(:badges_and_room_assignments) {<<-TEXT
   Hello, my name is Edsger.
   Hello, my name is Ada.
