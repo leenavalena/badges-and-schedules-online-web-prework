@@ -47,11 +47,8 @@ def conference_badges
 
     def batch_badge_creator(attendees)
 
-      it 'should return a list of badge messages' do
-        expect(batch_badge_creator(attendees)).to eq(badges)
-      end
-      it 'should not hard-code response' do
-        expect(batch_badge_creator(["Johnny"])).to eq(["Hello, my name is Johnny."])
+      batch_badge_creator(attendees) == badges
+        batch_badge_creator(["Johnny"]) == "Hello, my name is Johnny."
       end
 
     end
