@@ -45,7 +45,7 @@ def conference_badges
       puts "Hello, my name is #{name}."
       end
 
-    describe '#batch_badge_creator' do
+    def batch_badge_creator
 
       # Question 2b
 
