@@ -45,9 +45,7 @@ def conference_badges
       puts "Hello, my name is #{name}."
       end
 
-    def batch_badge_creator
-
-      # Question 2b
+    def batch_badge_creator(attendees)
 
       it 'should return a list of badge messages' do
         expect(batch_badge_creator(attendees)).to eq(badges)
